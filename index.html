@@ -61,7 +61,12 @@
     input, textarea { width: 100%; padding:.8rem 1rem; border-radius: 10px; border:1px solid rgba(245,158,11,0.25); background: rgba(255,255,255,0.03); color: var(--white); }
     label { display:block; font-weight:600; margin:.5rem 0 .25rem; }
     .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:.75rem; padding:.2rem .45rem; border:1px solid rgba(255,255,255,.15); border-bottom-width:2px; border-radius:6px; background:#1a1324; }
-  </style>
+    /* Image Backdrop Slideshow */
+    .backdrop-slider { width: 100%; height: 300px; position: relative; overflow: hidden; margin-bottom: 2rem; border-radius: 16px; }
+    .backdrop-slider img { width: 100%; height: 100%; object-fit: cover; position: absolute; opacity: 0; animation: fadeSlide 8s infinite; }
+    .backdrop-slider img:nth-child(2) { animation-delay: 4s; }
+    @keyframes fadeSlide { 0% { opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { opacity: 0; } }
+</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -123,6 +128,11 @@
         </article>
       </div>
     </div>
+  </section>
+  <!-- Image Backdrop Slideshow -->
+  <section class="backdrop-slider" aria-label="Image slideshow">
+    <img src="image1.jpg" alt="Community genealogy workshop" />
+    <img src="image2.jpg" alt="Family archive materials" />
   </section>
 
   <!-- Mission -->
