@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Shared Header -->
+    <header>
+        <h1>Get Involved with Roots and Boots</h1>
+    </header>
+
+    <main>
+        <section id="donate-volunteer">
+            <h2>Donate & Volunteer</h2>
+            <p>Your support makes a difference! Join us in our mission.</p>
+
+            <h3>Volunteer Sign-Up</h3>
+            <form action="/submit-volunteer" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">How would you like to help?</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <form action="/submit-contact" method="post">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+
+                <label for="contact-message">Message:</label>
+                <textarea id="contact-message" name="contact-message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer>
+        <p>&copy; 2026 Roots and Boots. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
