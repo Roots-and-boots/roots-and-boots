@@ -3,42 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership Options</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .container { width: 80%; margin: auto; }
-        .card { border: 1px solid #ccc; border-radius: 5px; padding: 20px; margin: 20px; text-align: center; }
-        .button { background-color: #4CAF50; color: white; padding: 15px 20px; border: none; border-radius: 5px; cursor: pointer; }
-        .button:hover { background-color: #45a049; }
-        .grid { display: flex; justify-content: space-around; }
-    </style>
+    <title>Membership</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Membership Options</h1>
-        <div class="grid">
-            <div class="card">
-                <h2>Free Membership</h2>
-                <p>$0</p>
-                <ul>
-                    <li>1 genealogy session every 6 months</li>
-                </ul>
-                <button class="button">Join Free</button>
-            </div>
-            <div class="card">
-                <h2>Premium Membership</h2>
-                <p>$50/year</p>
-                <ul>
-                    <li>5 free personal genealogy sessions</li>
-                </ul>
-                <button class="button">Join Premium</button>
-            </div>
-            <div class="card">
-                <h2>Book a Session</h2>
-                <p>$20 per session</p>
-                <button class="button">Book Now</button>
-            </div>
+    <header>
+        <h1>Membership Plans</h1>
+    </header>
+
+    <section id="membership-plans">
+        <h2>Choose Your Plan</h2>
+        <table>
+            <tr>
+                <th>Tier</th>
+                <th>Price</th>
+                <th>Sessions</th>
+                <th>Features</th>
+            </tr>
+            <tr>
+                <td>Free</td>
+                <td>$0/year</td>
+                <td>1 session every 6 months</td>
+                <td>Basic access</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>$50/year</td>
+                <td>5 free sessions</td>
+                <td>Featured tier with access to all events</td>
+            </tr>
+            <tr>
+                <td>Pay-Per-Session</td>
+                <td>$20/session</td>
+                <td>On demand</td>
+                <td>Access to all sessions as needed</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div>
+            <h3>What is the Free Tier?</h3>
+            <p>The Free Tier allows one session every 6 months with basic access.</p>
         </div>
-    </div>
+        <div>
+            <h3>What benefits do I get with the Premium Tier?</h3>
+            <p>The Premium Tier includes 5 free sessions and access to all events.</p>
+        </div>
+        <div>
+            <h3>How does the Pay-Per-Session model work?</h3>
+            <p>You can pay $20 for each session you choose to attend as needed.</p>
+        </div>
+    </section>
+
+    <section id="call-to-action">
+        <h2>Join Us Today!</h2>
+        <p>Choose your membership plan and start your journey with us!</p>
+        <button>Sign Up Now</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Roots and Boots. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
