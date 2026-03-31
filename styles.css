@@ -1,0 +1,157 @@
+:root {
+  --purple: #6b21a8;
+  --gold: #f59e0b;
+  --black: #0b0b0b;
+  --bg: #0f0a17;
+  --white: #ffffff;
+  --muted: #d6d3d1;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--white);
+  background: var(--bg);
+  line-height: 1.6;
+}
+a {
+  color: var(--gold);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  width: min(1100px, 92vw);
+  margin-inline: auto;
+  padding: 0 1rem;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+  background: rgba(15, 10, 23, 0.7);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.15);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.brand img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #1c1229;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+.brand h1 {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  margin: 0;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+}
+nav a:hover {
+  background: rgba(107, 33, 168, 0.15);
+  text-decoration: none;
+}
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.pricing-card {
+  border: 2px solid rgba(245, 158, 11, 0.2);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.pricing-card:hover {
+  border-color: rgba(245, 158, 11, 0.5);
+  box-shadow: 0 8px 32px rgba(245, 158, 11, 0.1);
+}
+.pricing-card.featured {
+  border: 2px solid var(--gold);
+  transform: scale(1.05);
+  box-shadow: 0 12px 48px rgba(245, 158, 11, 0.2);
+}
+.pricing-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: var(--gold);
+}
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 1rem 0;
+}
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+.features-list li {
+  padding: 0.5rem 0;
+  color: var(--muted);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.1);
+}
+.features-list li:before {
+  content: "✓ ";
+  color: var(--gold);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+.btn:hover {
+  background: rgba(245, 158, 11, 0.18);
+}
+.btn.primary {
+  background: linear-gradient(135deg, var(--gold), #ffca45);
+  color: #1b1300;
+  border: none;
+}
+.btn.wide {
+  width: 100%;
+  margin-top: 1.5rem;
+}
